@@ -82,12 +82,14 @@ If none of the existing converters fit, you can add custom ones, an example for 
 To make sure a picture is available for this device on the supported devices page and in the frontend:
 
 1. Clone [zigbee2mqtt.io](https://github.com/Koenkk/zigbee2mqtt.io)
-2. Add a device picture (`.png`, 512x512, transparent background) in `public/images/devices`.
+!! (would be good to have a link to a page explaining how to clone a project).  
+3. Add a device picture (`.png`, 512x512, transparent background) in `public/images/devices`.
     - _If necessary, use the [Adobe Express Remove Background tool](https://new.express.adobe.com/tools/remove-background) to make the background transparent._
-3. **_Optional:_** Add a markdown file for your device to `docs/devices`, use the `model` property of your definition as the filename. Most of the contents of this file will be auto-generated through docgen but you can add your own notes in a notes section. Do not use h1 or h2 heading within "## Notes"-Section.
+4. **_Optional:_** Add a markdown file for your device to `docs/devices`, use the `model` property of your definition as the filename. Most of the contents of this file will be auto-generated through docgen but you can add your own notes in a notes section. Do not use h1 or h2 heading within "## Notes"-Section.
     > > \<!-- Notes BEGIN --><br> >> \## Notes<br>
     > > ...<br> >> \<!-- Notes END -->
-4. Create a Pull Request for [zigbee2mqtt.io](https://github.com/Koenkk/zigbee2mqtt.io).
+5. Create a Pull Request for [zigbee2mqtt.io](https://github.com/Koenkk/zigbee2mqtt.io).
+!! (would be good to have a link to a page explaining how to create a Pull request. This and the clone are just 2 things I didn't understand, and when several steps are so obscure, it's not conducing to using the product).
 
 Upon the next release of Zigbee2MQTT, the documentation will be updated and your device file will be linked in `../../supported-devices.md` automatically.
 
